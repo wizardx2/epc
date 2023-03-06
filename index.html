@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>EPC</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/com.css" />
+    <link rel="stylesheet" href="css/circuit.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+    />
+    <link rel="icon" href="images/titlelogo.JPG" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    
+    <link rel="preload" as="image" href="images/cgc-logo5.gif" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <script>
+      $(window).load(function() {
+        // Animate loader off screen
+        $(".se-pre-con").fadeOut("fast");
+      });
+    </script>
+  </head>
+  <body id="bg" class="dark-mode homepagebody">
+    <!--loader-->
+    <!-- <div class="se-pre-con"></div> -->
+
+    
+    <!---logo-->
+    
+      <div class="container homepage">
+        <div class="row title-row">
+        <div class="col-md-9 col-md-offset-3 col-xs-12 col-xs-offset-0 title-column flex">
+          <img
+            class="logo rev"
+            style="flex: 33.33%;"
+            src="images/logoanime.gif"
+            alt="EPC"
+          />
+          
+
+          <div class="title">
+            <h1 class="X" style="flex: 20%;" data-shadow="EPC">EPC</h1>
+          </div>
+        </div>
+        <div class="col-md-9 col-md-offset-3 col-xs-12 col-xs-offset-0 title-column">
+          <a style="border-color:none;" target="_blank" href="https://cgc.edu.in/"
+            ><img
+              class="college rev"
+              src="images/cgc-logo5.gif"
+              alt="College Logo"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <!--header-->
+    
+    <div class="sw">
+      <label class="switch">
+        <input type="checkbox" onclick="dark()">
+        <span class="slider round"></span>
+      </label>  
+    </div>
+    <h3
+      onclick="play1()"
+    >
+    <div id="menu-btn"><span id="clock">MENU</span></div>
+      
+    </h3>
+    
+    <nav class="menu">
+      <p onclick="play2()">
+      <span class="close-btn">Close</span>
+      </p>
+      <ol>
+        <li class="menu-item"><a href="#" onclick="play3()">Home</a></li>
+        <li class="menu-item">
+          <a href="#" onclick="play3()">SignIn</a>
+          <ol class="sub-menu">
+            <li class="menu-item">
+              <!-- <a href="#" onclick="play3()">SignIn</a> and get latest update from <a href="#">EPC</a> Club. -->
+            </li>
+          </ol>
+        </li>
+        <li class="menu-item">
+          <a href="About.html" onclick="about()">About</a>
+          <ol class="sub-menu">
+            <li class="menu-item"><a href="team.html">Our team</a></li>
+            <li class="menu-item"><a href="events.html" onclick="play3()">Events</a></li>
+            <li class="menu-item">
+              <a
+                target="_blank"
+                href="#" onclick="play3()"
+                >ECE Department</a
+              >
+            </li>
+            <li class="menu-item">
+              <a target="_blank" href="https://cgc.edu.in/">CGC Landran</a>
+            </li>
+            <!--<li class="menu-item"><a href="#">Info</a></li>-->
+          </ol>
+        </li>
+        <!---<li class="menu-item">
+          <a href="#">item</a>
+          <ol class="sub-menu">
+            <li class="menu-item"><a href="#">1</a></li>
+            <li class="menu-item"><a href="#">2</a></li>
+            <li class="menu-item"><a href="#">3</a></li>
+          </ol>
+        </li>--->
+        <li class="menu-item"><a href="#" onclick="play3()">Contact</a></li>
+        
+      </ol>
+    </nav>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.dots.min.js"></script>
+<script>
+VANTA.DOTS({
+  el: "#bg",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: true,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0xf241,
+  color2: 0x0,
+  backgroundColor: 0x0,
+  size: 7.30,
+  spacing: 50.00
+})
+</script>
+<script src="js/music.js"></script>
+  </body>
+</html>
